@@ -1,0 +1,13 @@
+* C:\Users\benja\Downloads\2024\TCII\TS1\Simulacion LTspice.asc
+R1 N001 V1 1
+R2 V2 N001 1
+R3 0 N002 1
+C1 N002 V1 1
+V1 V1 0 AC 1
+XU1 N002 N001 Vcc Vee V2 level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V2 Vcc 0 15
+V3 0 Vee 15
+.ac dec 1000 0.001 10k
+.lib UniversalOpAmp1.lib
+.backanno
+.end
