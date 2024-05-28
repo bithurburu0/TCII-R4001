@@ -1,0 +1,13 @@
+* C:\Users\benja\Downloads\2024\TCII\TS5\circuito simulación desnormalizado.asc
+XU1 N002 N003 N002 opamp Aol=100K GBW=10Meg
+R1 N001 Vi 1
+R2 N001 N003 1
+C1 N003 0 57.143409µ
+C2 N002 N001 109.154297µ
+V1 Vi 0 AC 1
+R3 Vo N002 1
+C3 Vo 0 86.437819µ
+.ac dec 1000 10 100k
+.lib opamp.sub
+.backanno
+.end
